@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "EB Garamond", Georgia, serif;
+  --font-display: "Cinzel", "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", Courier, monospace;
+
+  --color-ebony: #0f0e0c;
+  --color-parchment: #fbf7eb;
+  --color-parchment-dark: #ece2cb;
+  --color-brass-gold: #b8862b;
+  --color-brass-light: #eedda0;
+  --color-brass-mid: #623f14;
+  --color-brass-dark: #2c1f16;
+  --color-crimson-ribbon: #801010;
+}
+
+/* Custom Scrollbar styled as antique iron/dark brass */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0e0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a2512;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8862b;
+}
+
+/* Vintage Candle Flickering Keyframe effect */
+@keyframes warm-pulse {
+  0%, 100% { opacity: 0.96; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.015); }
+}
+
+.candle-flicker {
+  animation: warm-pulse 6s ease-in-out infinite;
+}
+
+/* Ink bleeding highlight effect */
+::selection {
+  background-color: #801010;
+  color: #fbf7eb;
+}
+
+/* Dynamic Blink alert */
+@keyframes pulse-blink {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px rgba(220, 38, 38, 0.5)); }
+  50% { opacity: 0.4; filter: none; }
+}
+.blink {
+  animation: pulse-blink 1.8s infinite;
+}
+
+/* Cursive margin annotations */
+.marginalia-note {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #623f14;
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin-slow 30s linear infinite;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Sovereign Archival Ledger",
+  "description": "A sovereign historical archive of engineering manuscripts, classified dossiers, and experimental systems built by Kasilingam Maruthamuthu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
